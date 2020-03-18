@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html{
+  font-size: 10px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: #eee !important;
+}
+
+body{
+  width: 100% !important;
+  height: 100% !important;
+  background: url('./assets/sitebg.jpg') no-repeat center fixed !important;
+  background-size: cover !important;
+}
+
+section{
+  padding: 6rem 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+  color: #eee !important;
+}
+
+p{
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  color: #eee !important;
+}
+
+img{
+  width: 100% !important;
+}
+
+@media screen and (max-width: 768px){
+  body{
+    background: url('./assets/sitebg2.jpg') no-repeat center fixed !important;
+    background-size: cover !important;
+  }
+}

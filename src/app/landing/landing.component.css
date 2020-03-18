@@ -1,0 +1,638 @@
+@import url(//db.onlinewebfonts.com/c/0923ee644c97a87d70269aa80a6f1e79?family=The+Historia+Demo);
+
+.container{
+  width: 90% !important;
+  max-width: 120rem !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+.section-heading{
+  text-align: center !important;
+  margin-bottom: 10rem !important;
+  color: white !important;
+}
+
+.section-heading h1{
+  font-size: 3.5rem !important;
+  color: rgba(255, 255, 255, .3) !important;
+  text-transform: uppercase !important;
+  font-weight: 300 !important;
+  position: relative !important;
+  margin-bottom: 1rem !important;
+}
+
+.section-heading h1::before,
+.section-heading h2::after{
+  content: '' !important;
+  position: absolute !important;
+  bottom: -0.5rem !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: rgba(255, 255, 255, .75) !important;
+}
+
+.section-heading h1::before{
+  width: 10rem !important;
+  height: 3px !important;
+  border-radius: 0.8rem !important;
+}
+
+.section-heading h1::after{
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border-radius: 100% !important;
+  bottom: -1rem !important;
+  color: white !important;
+}
+
+.section-heading h6{
+  font-size: 1.6rem !important;
+  font-weight: 300 !important;
+}
+
+.has-margin-right{
+  margin-right: 5rem !important;
+}
+
+header{
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.top-nav{
+  width: 100% !important;
+  height: 100vh !important;
+  top: -100vh !important;
+  z-index: 50 !important;
+  position: fixed !important;
+  background-color: #16162d !important;
+  border-bottom-right-radius: 100% !important;
+  border-bottom-left-radius: 100% !important;
+  transition: all 650ms cubic-bezier(1,0,0,1) !important;
+}
+
+.nav-list{
+  list-style: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+li{
+  margin: 0 2rem !important;
+}
+
+.nav-link{
+  font-family: 'The Historia Demo', sans-serif !important;
+  font-size: 5rem !important;
+  padding: 1rem !important;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+  background: linear-gradient(to top, #ffe838, #fd57bf) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+}
+
+.top-nav.open{
+  top: 0 !important;
+  border-radius: initial !important;
+}
+
+.menu-toggler{
+  position: absolute !important;
+  top: 5rem !important;
+  right: 5rem !important;
+  width: 5rem !important;
+  height: 4rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  cursor: pointer !important;
+  z-index: 1500 !important;
+  transition: transform 650ms ease-out !important;
+}
+
+.menu-toggler.open{
+  transform: rotate(-45deg) !important;
+}
+
+.bar{
+  background: linear-gradient(to right, #ffe838, #fd57bf) !important;
+  width: 100% !important;
+  height: 4px !important;
+  border-radius: .8rem !important;
+}
+
+.bar.half{
+  width: 50% !important;
+}
+
+.bar.start{
+  transform-origin: right !important;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57) !important;
+}
+
+.open .bar.start{
+  transform: rotate(-450deg) translateX(.8rem) !important;
+}
+
+.bar.end{
+  align-self: flex-end !important;
+  transform-origin: left !important;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57) !important;
+}
+
+.open .bar.end{
+  transform: rotate(-450deg) translateX(-.8rem) !important;
+}
+
+.landing-text{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+  text-align: center !important;
+  z-index: 1 !important;
+}
+
+.landing-text h1{
+  font-size: 20rem !important;
+  font-family: 'The Historia Demo', sans-serif !important;
+  background: linear-gradient(to top, #ffe838, #fd57bf) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  padding: 1rem !important;
+  user-select: none !important;
+}
+
+.landing-text h6{
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  color: white !important;
+}
+
+.about .container{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.about-heading{
+  text-align: center !important;
+  text-transform: uppercase !important;
+  line-height: 0 !important;
+  margin-bottom: 6rem !important;
+}
+
+.about-heading h1{
+  font-size: 10rem !important;
+  color: white !important;
+  opacity: .3 !important;
+}
+
+.about-heading h6{
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  color: white !important;
+}
+
+.profile-img{
+  flex: 1 !important;
+  margin-right: 5rem !important;
+}
+
+.about-details{
+  flex: 1 !important;
+}
+
+.social-media{
+  margin-top: 5rem !important;
+}
+
+.social-media i{
+  font-size: 5rem !important;
+  transition: color 650ms !important;
+}
+
+.fa-facebook-square:hover{
+  color: #4267b2 !important;
+}
+
+.fa-twitter-square:hover{
+  color: #38a1f3 !important;
+}
+
+.fa-dribbble-square:hover{
+  color: #ea4c89 !important;
+}
+
+.my-skills{
+  margin-top: 10rem !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)) !important;
+  grid-gap: 2.5rem !important;
+  text-align: center !important;
+}
+
+.skill{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 2rem !important;
+}
+
+.skill h1{
+  color: white !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin: 2rem-2px 2rem 0 !important;
+}
+
+.icon-container{
+  width: 10rem !important;
+  height: 10rem !important;
+  border: 3px solid #ffe838 !important;
+  background-color: #fd57bf !important;
+  margin-bottom: 2rem !important;
+  display: flex !important;
+  transform: rotate(45deg) !important;
+}
+
+.icon-container i{
+  color: #ffe838 !important;
+  font-size: 5rem !important;
+  margin: auto !important;
+  transform: rotate(-45deg) !important;
+}
+
+.portfolio-item{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 5rem !important;
+}
+
+.portfolio-item:last-child{
+  margin-bottom: 0 !important;
+}
+
+.portfolio-img{
+  width: 50rem !important;
+  flex: 1 !important;
+}
+
+.portfolio-description{
+  flex: 1 !important;
+}
+
+.portfolio-description h6{
+  color: white !important;
+  font-size: 1.5rem !important;
+  text-transform: uppercase !important;
+  font-weight: 300 !important;
+  opacity: 0.3 !important;
+}
+
+.portfolio-description h1{
+  color: white !important;
+  font-size: 3rem !important;
+  font-weight: 300 !important;
+  margin: 1rem 0 !important;
+}
+
+.portfolio-description .cta{
+  display: inline-block !important;
+  margin-top: 2.5rem !important;
+  font-size: 1.5rem !important;
+  text-transform: uppercase !important;
+  color: #3882ff !important;
+  transition: color 650ms !important;
+}
+
+.portfolio-description .cta:hover{
+  color: #2f67cd !important;
+}
+
+.timeline ul{
+  border-left: 4px solid #ffe838 !important;
+  border-radius: 0.8rem !important;
+  background-color: rgba(0,0,0,0.05) !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  padding: 5rem !important;
+  list-style: none !important;
+  text-align: left !important;
+  width: 70% !important;
+}
+
+.timeline h1{
+  color: white !important;
+  text-transform: uppercase !important;
+  font-weight: 300 !important;
+  margin-bottom: 1rem !important;
+  opacity: 0.3 !important;
+}
+
+.timeline .date{
+  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 1rem !important;
+  position: relative !important;
+}
+
+.timeline .date:last-of-type{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+}
+
+.timeline .date::before,
+.timeline .date::after{
+  position: absolute !important;
+  display: block !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.timeline .date::before{
+  content: attr(data-date) !important;
+  color: white !important;
+  left: -21rem !important;
+  text-align: right !important;
+  min-width: 12rem !important;
+  font-size: 1.5rem !important;
+}
+
+.timeline .date::after{
+  content: '' !important;
+  box-shadow: 0 0 0 4px #fd57bf !important;
+  border-radius: 100% !important;
+  left: -8rem !important;
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  background-color: #313534 !important;
+}
+
+.contact{
+  background-color: #221e3f !important;
+}
+
+form{
+  width: 70% !important;
+  margin: 0 auto !important;
+}
+
+form label{
+  font-size: 1.5rem !important;
+}
+
+input,
+select,
+textarea{
+  width: 100% !important;
+  padding: 1rem !important;
+  margin-top: 5px !important;
+  border: none !important;
+  outline-color: #fd57bf !important;
+}
+
+input[type="submit"]{
+  width: initial !important;
+  background-color: #fd57bf !important;
+  color: #eee !important;
+  padding: 1rem 2rem !important;
+  border-radius: 0.8rem !important;
+  cursor: pointer !important;
+  transition: background-color 650ms !important;
+}
+
+input[type="submit"]:hover{
+  color: #221e3f !important;
+  background-color: #ffe838 !important;
+}
+
+.copyright{
+  width: 100% !important;
+  text-align: center !important;
+  background-color: #16162d !important;
+  padding: 2rem 0 !important;
+  position: relative !important;
+}
+
+.up{
+  position: absolute !important;
+  /* display: inline-block !important; */
+  width: 5rem !important;
+  height: 5rem !important;
+  background-color: #eee !important;
+  top: -2.5rem !important;
+  right: 5rem !important;
+  border-radius: 100% !important;
+  display: flex !important;
+  animation: pulse 2s infinite !important;
+  -moz-animation: pulse 2s infinite !important;    /* Firefox */
+  -webkit-animation: pulse 2s infinite !important; /* Safari and Chrome */
+  -o-animation: pulse 2s infinite !important;    /* Opera */
+  -ms-animation: pulse 2s infinite !important;
+  cursor: pointer !important;
+}
+
+.up i{
+  color: #16162d !important;
+  font-size: 2rem !important;
+  margin: auto !important;
+}
+
+.copyright p{
+  font-size: 1.4rem !important;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0);
+  }
+}
+
+@-moz-keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0);
+  }
+}
+
+@-webkit-keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0);
+  }
+}
+
+@-o-keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0);
+  }
+}
+
+@-ms-keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(253,87,191,0);
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .landing-text h1{
+    font-size: 15rem !important;
+  }
+
+  .landing-text h6{
+    font-size: 1.7rem !important;
+  }
+
+  .nav-list{
+    flex-direction: column !important;
+  }
+
+  li{
+    margin: 2rem 0 !important;
+  }
+
+  .nav-link{
+    font-size: 4.5rem !important;
+  }
+
+  .about-heading h1{
+    font-size: 8rem !important;
+  }
+
+  .section-heading h1{
+    font-size: 3rem !important;
+  }
+
+  .about-details .nav-list{
+    flex-direction: initial !important;
+  }
+
+  .about-details li{
+    margin: 0 2rem !important;
+  }
+
+  .icon-container{
+    width: 7rem !important;
+    height: 7rem !important;
+  }
+
+  .icon-container i{
+    font-size: 4rem !important;
+  }
+
+  .timeline ul{
+    margin: 0 0 0 auto !important;
+  }
+
+  .timeline .date::before{
+    left: -20rem !important;
+  }
+
+  .timeline .date::after{
+    left: -5.9rem !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .menu-toggler{
+    top: 2rem !important;
+    right: 2rem !important;
+  }
+
+  .landing-text h1{
+    font-size: 8rem !important;
+  }
+
+  .landing-text h6{
+    font-size: 1.4rem !important;
+  }
+
+  .nav-link{
+    font-size: 3.5rem !important;
+  }
+
+  .about .container{
+    flex-direction: column !important;
+  }
+
+  .profile-img{
+    margin: 0 0 7rem 0 !important;
+  }
+
+  .portfolio-item{
+    flex-direction: column !important;
+  }
+
+  .portfolio-img{
+    margin: 0 0 2rem 0 !important;
+    order: 1 !important;
+  }
+
+  .portfolio-description{
+    margin: 0 !important;
+    order: 2 !important;
+  }
+
+  .timeline p{
+    font-size: 1.6rem !important;
+  }
+
+  .timeline .date::before{
+    font-size: 1.4rem !important;
+  }
+
+  form{
+    width: 100% !important;
+  }
+
+  .up{
+    right: 2rem !important;
+  }
+}
