@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.13",
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-page-scroll": "^7.0.1",
     "popper.js": "^1.16.1",
